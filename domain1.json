@@ -1,0 +1,412 @@
+{
+  "concepts": [
+    {
+      "title": "CIA Triad",
+      "items": [
+        {
+          "term": "Confidentiality",
+          "def": "Ensuring information is accessible only to authorized individuals. Prevents unauthorized disclosure."
+        },
+        {
+          "term": "Integrity",
+          "def": "Maintaining accuracy and completeness of data. Ensures information hasn't been altered without authorization."
+        },
+        {
+          "term": "Availability",
+          "def": "Ensuring authorized users have timely and reliable access to information and resources when needed."
+        }
+      ]
+    },
+    {
+      "title": "Authentication Factors",
+      "items": [
+        {
+          "term": "Type 1 - Something You Know",
+          "def": "Knowledge-based authentication (passwords, PINs, passphrases, security questions)."
+        },
+        {
+          "term": "Type 2 - Something You Have",
+          "def": "Possession-based authentication (smart cards, tokens, key fobs, mobile devices)."
+        },
+        {
+          "term": "Type 3 - Something You Are",
+          "def": "Biometric authentication (fingerprints, facial recognition, iris scans, voice patterns)."
+        },
+        {
+          "term": "Multi-Factor Authentication (MFA)",
+          "def": "Combining two or more different authentication factors for stronger security."
+        }
+      ]
+    },
+    {
+      "title": "Security Controls",
+      "items": [
+        {
+          "term": "Physical Controls",
+          "def": "Tangible mechanisms (locks, badges, cameras, guards, fences) that protect physical assets."
+        },
+        {
+          "term": "Technical Controls",
+          "def": "Technology-based safeguards (firewalls, encryption, antivirus, IDS/IPS, access control systems)."
+        },
+        {
+          "term": "Administrative Controls",
+          "def": "Policies, procedures, and guidelines (security policies, training, background checks, separation of duties)."
+        }
+      ]
+    },
+    {
+      "title": "Control Functions",
+      "items": [
+        {
+          "term": "Preventive Controls",
+          "def": "Stop security incidents before they occur (firewalls, access controls, encryption, security awareness training)."
+        },
+        {
+          "term": "Detective Controls",
+          "def": "Identify and alert on security incidents during or after occurrence (IDS, SIEM, log monitoring, audits)."
+        },
+        {
+          "term": "Corrective Controls",
+          "def": "Minimize impact and restore systems after an incident (backups, disaster recovery, incident response procedures)."
+        },
+        {
+          "term": "Deterrent Controls",
+          "def": "Discourage potential attackers (warning signs, visible cameras, security guards)."
+        },
+        {
+          "term": "Compensating Controls",
+          "def": "Alternative measures when primary controls cannot be implemented (additional monitoring when encryption isn't feasible)."
+        }
+      ]
+    },
+    {
+      "title": "Access Control Models",
+      "items": [
+        {
+          "term": "Discretionary Access Control (DAC)",
+          "def": "Resource owner determines access permissions. Flexible but less secure (Windows file permissions)."
+        },
+        {
+          "term": "Mandatory Access Control (MAC)",
+          "def": "System enforces access based on classification labels. High security but less flexible (military systems)."
+        },
+        {
+          "term": "Role-Based Access Control (RBAC)",
+          "def": "Access granted based on job roles and responsibilities. Scalable and commonly used in organizations."
+        },
+        {
+          "term": "Rule-Based Access Control",
+          "def": "Access determined by administrator-defined rules (time-based access, location-based restrictions)."
+        }
+      ]
+    },
+    {
+      "title": "Security Principles",
+      "items": [
+        {
+          "term": "Defense in Depth",
+          "def": "Layered security approach using multiple controls to protect assets (network + host + application security)."
+        },
+        {
+          "term": "Least Privilege",
+          "def": "Users receive minimum access rights necessary to perform their job functions. Reduces risk exposure."
+        },
+        {
+          "term": "Separation of Duties",
+          "def": "Dividing critical tasks among multiple people to prevent fraud and errors (different people approve and process payments)."
+        },
+        {
+          "term": "Need to Know",
+          "def": "Access granted only when necessary for specific job responsibilities, regardless of clearance level."
+        },
+        {
+          "term": "Privacy by Design",
+          "def": "Building privacy protection into systems from inception rather than adding it later."
+        },
+        {
+          "term": "Zero Trust",
+          "def": "Never trust, always verify. Assumes breach and verifies every access request regardless of location."
+        }
+      ]
+    },
+    {
+      "title": "Risk Management",
+      "items": [
+        {
+          "term": "Risk",
+          "def": "Potential for loss or damage when a threat exploits a vulnerability (Risk = Threat × Vulnerability × Impact)."
+        },
+        {
+          "term": "Threat",
+          "def": "Any circumstance or event with potential to cause harm (hackers, malware, natural disasters, insider threats)."
+        },
+        {
+          "term": "Vulnerability",
+          "def": "Weakness in a system that can be exploited by a threat (unpatched software, weak passwords, misconfigurations)."
+        },
+        {
+          "term": "Risk Assessment",
+          "def": "Process of identifying, analyzing, and evaluating risks to determine their impact and likelihood."
+        },
+        {
+          "term": "Risk Treatment",
+          "def": "Selecting and implementing controls to address identified risks through avoidance, mitigation, transfer, or acceptance."
+        }
+      ]
+    },
+    {
+      "title": "Risk Response Strategies",
+      "items": [
+        {
+          "term": "Risk Avoidance",
+          "def": "Eliminating the risk by not engaging in the risky activity (not deploying a vulnerable application)."
+        },
+        {
+          "term": "Risk Mitigation",
+          "def": "Reducing risk likelihood or impact through controls (implementing firewalls, patches, training)."
+        },
+        {
+          "term": "Risk Transfer",
+          "def": "Shifting risk to another party (insurance, outsourcing, contracts with liability clauses)."
+        },
+        {
+          "term": "Risk Acceptance",
+          "def": "Acknowledging risk and accepting potential consequences when cost of mitigation exceeds risk value."
+        }
+      ]
+    },
+    {
+      "title": "Governance & Compliance",
+      "items": [
+        {
+          "term": "Governance",
+          "def": "Framework of policies, procedures, and processes that guide organizational decision-making and accountability."
+        },
+        {
+          "term": "Compliance",
+          "def": "Adhering to laws, regulations, standards, and contractual obligations (GDPR, HIPAA, PCI DSS, SOX)."
+        },
+        {
+          "term": "Regulations",
+          "def": "Legally mandated requirements organizations must follow (often industry or geography-specific)."
+        },
+        {
+          "term": "Standards",
+          "def": "Documented guidelines and best practices (ISO 27001, NIST frameworks, CIS Controls)."
+        },
+        {
+          "term": "Policies",
+          "def": "High-level statements defining organization's security posture and management intent."
+        },
+        {
+          "term": "Procedures",
+          "def": "Detailed step-by-step instructions for implementing policies and performing specific tasks."
+        }
+      ]
+    },
+    {
+      "title": "Security Concepts",
+      "items": [
+        {
+          "term": "Asset",
+          "def": "Anything of value to an organization (data, hardware, software, people, facilities, reputation)."
+        },
+        {
+          "term": "Security Baseline",
+          "def": "Minimum level of security controls required for systems (hardening standards, configuration requirements)."
+        },
+        {
+          "term": "Due Diligence",
+          "def": "Research and analysis performed before making security decisions or implementing controls."
+        },
+        {
+          "term": "Due Care",
+          "def": "Taking responsible actions to protect assets and demonstrating prudent security practices."
+        },
+        {
+          "term": "Non-Repudiation",
+          "def": "Ensuring actions or transactions cannot be denied by parties involved (digital signatures, audit logs)."
+        },
+        {
+          "term": "Attack Surface",
+          "def": "Total sum of vulnerabilities and entry points available to attackers in a system or network."
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "title": "Authentication vs Authorization vs Accounting",
+      "items": [
+        {
+          "aspect": "Authentication",
+          "description": "Verifying identity (Who are you?). Proves users are who they claim to be using credentials."
+        },
+        {
+          "aspect": "Authorization",
+          "description": "Granting access rights (What can you do?). Determines permissions after authentication succeeds."
+        },
+        {
+          "aspect": "Accounting/Auditing",
+          "description": "Tracking activities (What did you do?). Logs and monitors actions for accountability and forensics."
+        }
+      ]
+    },
+    {
+      "title": "Identification vs Authentication",
+      "items": [
+        {
+          "aspect": "Identification",
+          "description": "Claiming an identity (username, employee ID). First step - stating who you are without proving it."
+        },
+        {
+          "aspect": "Authentication",
+          "description": "Proving the claimed identity (password, biometric). Second step - providing evidence to verify the claim."
+        }
+      ]
+    },
+    {
+      "title": "Encryption vs Hashing vs Encoding",
+      "items": [
+        {
+          "aspect": "Encryption",
+          "description": "Two-way transformation using keys. Protects confidentiality. Can be decrypted with proper key (AES, RSA)."
+        },
+        {
+          "aspect": "Hashing",
+          "description": "One-way transformation. Ensures integrity. Cannot be reversed (SHA-256, MD5). Fixed output length."
+        },
+        {
+          "aspect": "Encoding",
+          "description": "Data format transformation for compatibility, NOT security. Easily reversible (Base64, ASCII, Unicode)."
+        }
+      ]
+    },
+    {
+      "title": "Symmetric vs Asymmetric Encryption",
+      "items": [
+        {
+          "aspect": "Symmetric",
+          "description": "Single shared key for encryption/decryption. Fast. Key distribution challenge. Examples: AES, DES, 3DES."
+        },
+        {
+          "aspect": "Asymmetric",
+          "description": "Public-private key pair. Slower but solves key distribution. Used for secure key exchange. Examples: RSA, ECC."
+        }
+      ]
+    },
+    {
+      "title": "IDS vs IPS",
+      "items": [
+        {
+          "aspect": "Intrusion Detection System (IDS)",
+          "description": "Passive monitoring. Detects and alerts on suspicious activities. Does not block traffic. Out-of-band deployment."
+        },
+        {
+          "aspect": "Intrusion Prevention System (IPS)",
+          "description": "Active protection. Detects and blocks malicious traffic in real-time. In-line deployment. Can impact performance."
+        }
+      ]
+    },
+    {
+      "title": "Quantitative vs Qualitative Risk Assessment",
+      "items": [
+        {
+          "aspect": "Quantitative",
+          "description": "Numerical analysis using data and calculations. Objective. Requires metrics like ALE, SLE, ARO. More precise but time-consuming."
+        },
+        {
+          "aspect": "Qualitative",
+          "description": "Descriptive analysis using judgment and experience. Subjective. Uses scales (High/Medium/Low). Faster but less precise."
+        }
+      ]
+    },
+    {
+      "title": "Vulnerability vs Exploit vs Threat",
+      "items": [
+        {
+          "aspect": "Vulnerability",
+          "description": "A weakness or flaw in a system (unpatched software, weak password, misconfiguration)."
+        },
+        {
+          "aspect": "Exploit",
+          "description": "Method or code that takes advantage of a vulnerability (malware, attack script, technique)."
+        },
+        {
+          "aspect": "Threat",
+          "description": "Potential danger that may exploit a vulnerability (hacker, natural disaster, insider, malware)."
+        }
+      ]
+    },
+    {
+      "title": "Incident vs Event",
+      "items": [
+        {
+          "aspect": "Event",
+          "description": "Any observable occurrence in a system (login attempt, file access, network connection). May be normal activity."
+        },
+        {
+          "aspect": "Incident",
+          "description": "Event that violates security policy or poses risk. Requires response (successful breach, malware infection, data theft)."
+        }
+      ]
+    },
+    {
+      "title": "Single Sign-On (SSO) vs Federated Identity",
+      "items": [
+        {
+          "aspect": "Single Sign-On (SSO)",
+          "description": "One authentication for multiple applications within same organization. Convenience and reduced password fatigue."
+        },
+        {
+          "aspect": "Federated Identity",
+          "description": "Authentication across multiple organizations using trusted relationships. Enables cross-domain access (SAML, OAuth)."
+        }
+      ]
+    },
+    {
+      "title": "Privacy vs Security",
+      "items": [
+        {
+          "aspect": "Privacy",
+          "description": "Control over personal information collection, use, and disclosure. About data rights and consent."
+        },
+        {
+          "aspect": "Security",
+          "description": "Protection of information assets from threats. About confidentiality, integrity, and availability."
+        },
+        {
+          "aspect": "Relationship",
+          "description": "Security enables privacy (can't have privacy without security), but security alone doesn't guarantee privacy."
+        }
+      ]
+    },
+    {
+      "title": "Business Continuity vs Disaster Recovery",
+      "items": [
+        {
+          "aspect": "Business Continuity (BC)",
+          "description": "Maintaining operations during disruption. Proactive planning for continuing critical functions. Broader scope."
+        },
+        {
+          "aspect": "Disaster Recovery (DR)",
+          "description": "Restoring IT systems after major incident. Reactive response to restore technology infrastructure. Narrower IT focus."
+        }
+      ]
+    },
+    {
+      "title": "Security Awareness vs Security Training",
+      "items": [
+        {
+          "aspect": "Security Awareness",
+          "description": "High-level understanding of security concepts. Broad audience. Focuses on what and why (monthly newsletters, posters)."
+        },
+        {
+          "aspect": "Security Training",
+          "description": "Detailed instruction on specific skills and procedures. Targeted audience. Focuses on how (hands-on exercises, certifications)."
+        }
+      ]
+    }
+  ]
+}

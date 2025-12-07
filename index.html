@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ISC2 CC Certification Reviewer - Comprehensive study guide for all five domains">
+    <meta name="keywords" content="ISC2, CC, Certified in Cybersecurity, Security, Certification, Study Guide">
+    <title>ISC2 CC Domains 1-5 Reviewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>🛡️ ISC2 CC Certification Reviewer</h1>
+            <p>Comprehensive study guide covering all five domains</p>
+        </div>
+
+        <!-- Domain Navigation Tabs -->
+        <div class="domain-tabs">
+            <button class="domain-tab active" onclick="switchDomain(1)">
+                Domain 1: Security Principles
+            </button>
+            <button class="domain-tab" onclick="switchDomain(2)">
+                Domain 2: Incident Response
+            </button>
+            <button class="domain-tab" onclick="switchDomain(3)">
+                Domain 3: Access Controls
+            </button>
+            <button class="domain-tab" onclick="switchDomain(4)">
+                Domain 4: Network Security
+            </button>
+            <button class="domain-tab" onclick="switchDomain(5)">
+                Domain 5: Security Operations
+            </button>
+        </div>
+
+        <!-- Domain Content Container -->
+        <div id="domain-content">
+            
+            <!-- Domain 1: Security Principles -->
+            <div id="domain-1" class="domain-content">
+                <div class="content-tabs">
+                    <button class="content-tab active" onclick="switchContentTab('concepts')">
+                        Core Concepts
+                    </button>
+                    <button class="content-tab" onclick="switchContentTab('comparisons')">
+                        Key Comparisons
+                    </button>
+                </div>
+
+                <div class="content-area">
+                    <!-- Concepts will be dynamically loaded here -->
+                    <div id="concepts-content">
+                        <div class="loading">Loading Domain 1 content...</div>
+                    </div>
+
+                    <!-- Comparisons will be dynamically loaded here -->
+                    <div id="comparisons-content" style="display: none;">
+                        <div class="loading">Loading comparisons...</div>
+                    </div>
+                    
+                    <!-- Study Tip -->
+                    <div class="study-tip">
+                        <p><strong>💡 Study Tip:</strong> Focus on understanding relationships between concepts. The exam tests application of knowledge, not just memorization.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Domain 2: Incident Response, Business Continuity & Disaster Recovery -->
+            <div id="domain-2" class="domain-content" style="display: none;">
+                <div class="coming-soon">
+                    <h2>📋 Domain 2: Incident Response</h2>
+                    <p>Business Continuity & Disaster Recovery</p>
+                    <p style="margin-top: 10px; color: #666;">Content coming soon...</p>
+                </div>
+            </div>
+
+            <!-- Domain 3: Access Controls Concepts -->
+            <div id="domain-3" class="domain-content" style="display: none;">
+                <div class="coming-soon">
+                    <h2>🔐 Domain 3: Access Controls</h2>
+                    <p>Physical and Logical Access Controls</p>
+                    <p style="margin-top: 10px; color: #666;">Content coming soon...</p>
+                </div>
+            </div>
+
+            <!-- Domain 4: Network Security -->
+            <div id="domain-4" class="domain-content" style="display: none;">
+                <div class="coming-soon">
+                    <h2>🌐 Domain 4: Network Security</h2>
+                    <p>Network Infrastructure & Communications</p>
+                    <p style="margin-top: 10px; color: #666;">Content coming soon...</p>
+                </div>
+            </div>
+
+            <!-- Domain 5: Security Operations -->
+            <div id="domain-5" class="domain-content" style="display: none;">
+                <div class="coming-soon">
+                    <h2>⚙️ Domain 5: Security Operations</h2>
+                    <p>Data Security & System Hardening</p>
+                    <p style="margin-top: 10px; color: #666;">Content coming soon...</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

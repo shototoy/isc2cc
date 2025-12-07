@@ -1,0 +1,468 @@
+{
+  "concepts": [
+    {
+      "title": "Incident Response Process",
+      "items": [
+        {
+          "term": "Preparation",
+          "def": "Establishing incident response capabilities, creating plans, training teams, and implementing detection tools before incidents occur."
+        },
+        {
+          "term": "Detection and Analysis",
+          "def": "Identifying potential security incidents through monitoring, analyzing alerts, and determining scope and impact of events."
+        },
+        {
+          "term": "Containment",
+          "def": "Limiting the damage and preventing the incident from spreading. Includes short-term and long-term containment strategies."
+        },
+        {
+          "term": "Eradication",
+          "def": "Removing the threat from the environment, including malware removal, closing vulnerabilities, and eliminating attacker access."
+        },
+        {
+          "term": "Recovery",
+          "def": "Restoring systems to normal operations, validating system functionality, and monitoring for any signs of persistence."
+        },
+        {
+          "term": "Post-Incident Activity",
+          "def": "Documenting lessons learned, updating procedures, and implementing improvements to prevent similar incidents."
+        }
+      ]
+    },
+    {
+      "title": "Incident Types",
+      "items": [
+        {
+          "term": "Malware Incident",
+          "def": "Infection by viruses, worms, trojans, ransomware, or other malicious software affecting systems or data."
+        },
+        {
+          "term": "Phishing Attack",
+          "def": "Social engineering attempt to trick users into revealing credentials or sensitive information through fraudulent communications."
+        },
+        {
+          "term": "Data Breach",
+          "def": "Unauthorized access, acquisition, or disclosure of sensitive or protected information."
+        },
+        {
+          "term": "Denial of Service (DoS/DDoS)",
+          "def": "Attack overwhelming systems or networks to disrupt availability for legitimate users."
+        },
+        {
+          "term": "Insider Threat",
+          "def": "Security incident caused by authorized users misusing access privileges, either maliciously or accidentally."
+        },
+        {
+          "term": "Zero-Day Exploit",
+          "def": "Attack exploiting previously unknown vulnerabilities before patches or mitigations are available."
+        }
+      ]
+    },
+    {
+      "title": "Incident Response Team Roles",
+      "items": [
+        {
+          "term": "Incident Response Manager",
+          "def": "Coordinates response activities, makes decisions, communicates with stakeholders, and ensures proper documentation."
+        },
+        {
+          "term": "Security Analyst",
+          "def": "Investigates incidents, analyzes logs and alerts, performs forensics, and identifies indicators of compromise."
+        },
+        {
+          "term": "Technical Lead",
+          "def": "Provides technical expertise, implements containment and remediation measures, and guides technical response actions."
+        },
+        {
+          "term": "Communications Coordinator",
+          "def": "Manages internal and external communications, handles media relations, and ensures consistent messaging."
+        },
+        {
+          "term": "Legal Counsel",
+          "def": "Advises on legal obligations, regulatory requirements, and potential liability issues during incident response."
+        }
+      ]
+    },
+    {
+      "title": "Business Continuity Planning",
+      "items": [
+        {
+          "term": "Business Impact Analysis (BIA)",
+          "def": "Process identifying critical business functions, assessing impact of disruptions, and determining recovery priorities and timeframes."
+        },
+        {
+          "term": "Recovery Time Objective (RTO)",
+          "def": "Maximum acceptable time that a system or function can be unavailable after a disruption occurs."
+        },
+        {
+          "term": "Recovery Point Objective (RPO)",
+          "def": "Maximum acceptable amount of data loss measured in time. Determines backup frequency requirements."
+        },
+        {
+          "term": "Maximum Tolerable Downtime (MTD)",
+          "def": "Longest time a business function can be unavailable before causing unacceptable consequences to the organization."
+        },
+        {
+          "term": "Business Continuity Plan (BCP)",
+          "def": "Documented procedures for maintaining or quickly resuming critical business operations during and after a disruption."
+        },
+        {
+          "term": "Continuity of Operations (COOP)",
+          "def": "Efforts ensuring essential functions continue under all circumstances, including during emergencies or disruptions."
+        }
+      ]
+    },
+    {
+      "title": "Disaster Recovery",
+      "items": [
+        {
+          "term": "Disaster Recovery Plan (DRP)",
+          "def": "Documented processes for recovering IT systems, applications, and data after a disaster or major disruption."
+        },
+        {
+          "term": "Hot Site",
+          "def": "Fully equipped backup facility with current data, ready for immediate failover. Most expensive but fastest recovery."
+        },
+        {
+          "term": "Warm Site",
+          "def": "Partially equipped facility with some infrastructure but requires configuration and data restoration. Moderate cost and recovery time."
+        },
+        {
+          "term": "Cold Site",
+          "def": "Basic facility with power and cooling but no equipment or data. Least expensive but longest recovery time."
+        },
+        {
+          "term": "Failover",
+          "def": "Automatic or manual switching to a redundant or backup system when the primary system fails."
+        },
+        {
+          "term": "Failback",
+          "def": "Process of restoring operations to the primary site or system after a disaster recovery event."
+        }
+      ]
+    },
+    {
+      "title": "Backup Strategies",
+      "items": [
+        {
+          "term": "Full Backup",
+          "def": "Complete copy of all selected data. Slowest to create but fastest to restore. High storage requirements."
+        },
+        {
+          "term": "Incremental Backup",
+          "def": "Backs up only data changed since last backup (full or incremental). Fast backup, slower restore requiring multiple sets."
+        },
+        {
+          "term": "Differential Backup",
+          "def": "Backs up all data changed since last full backup. Moderate speed for backup and restore. Requires full plus last differential."
+        },
+        {
+          "term": "Snapshot",
+          "def": "Point-in-time copy of data state. Quick to create, useful for rapid recovery and testing scenarios."
+        },
+        {
+          "term": "3-2-1 Backup Rule",
+          "def": "Keep 3 copies of data, on 2 different media types, with 1 copy offsite. Industry best practice for data protection."
+        },
+        {
+          "term": "Backup Retention",
+          "def": "Policy defining how long backup copies are kept before deletion, balancing compliance needs and storage costs."
+        }
+      ]
+    },
+    {
+      "title": "Testing and Exercises",
+      "items": [
+        {
+          "term": "Tabletop Exercise",
+          "def": "Discussion-based session where team members walk through response scenarios without executing actual procedures."
+        },
+        {
+          "term": "Walkthrough Test",
+          "def": "Team members review plans step-by-step, identifying gaps and areas needing clarification or improvement."
+        },
+        {
+          "term": "Simulation Exercise",
+          "def": "More realistic exercise simulating actual incident conditions, testing response coordination and decision-making."
+        },
+        {
+          "term": "Full-Scale Test",
+          "def": "Complete execution of disaster recovery or business continuity procedures, including actual system failover and recovery."
+        },
+        {
+          "term": "Parallel Test",
+          "def": "Running backup systems alongside production to verify functionality without disrupting normal operations."
+        }
+      ]
+    },
+    {
+      "title": "Communication and Coordination",
+      "items": [
+        {
+          "term": "Incident Communication Plan",
+          "def": "Procedures for notifying stakeholders, including who to contact, when, how, and what information to share."
+        },
+        {
+          "term": "Escalation Procedures",
+          "def": "Defined process for elevating incidents to higher management levels based on severity, impact, or time elapsed."
+        },
+        {
+          "term": "Chain of Custody",
+          "def": "Documentation tracking evidence handling from collection through legal proceedings, ensuring integrity and admissibility."
+        },
+        {
+          "term": "War Room",
+          "def": "Central coordination location where incident response team gathers to manage and respond to major incidents."
+        },
+        {
+          "term": "Status Updates",
+          "def": "Regular communications to stakeholders about incident progress, actions taken, and estimated resolution time."
+        }
+      ]
+    },
+    {
+      "title": "Evidence Collection and Forensics",
+      "items": [
+        {
+          "term": "Digital Forensics",
+          "def": "Scientific process of collecting, preserving, analyzing, and presenting digital evidence for investigation or legal proceedings."
+        },
+        {
+          "term": "Volatile Data",
+          "def": "Information in RAM, cache, or running processes that is lost when power is removed. Must be collected first."
+        },
+        {
+          "term": "Non-Volatile Data",
+          "def": "Persistent data stored on hard drives, SSDs, or other storage media that remains after power loss."
+        },
+        {
+          "term": "Write Blocker",
+          "def": "Hardware or software preventing modification of evidence during collection and analysis, preserving integrity."
+        },
+        {
+          "term": "Forensic Image",
+          "def": "Bit-by-bit copy of storage media, including deleted files and slack space, used for analysis without altering original."
+        },
+        {
+          "term": "Hash Value",
+          "def": "Cryptographic fingerprint proving evidence integrity and showing data hasn't been altered during investigation."
+        }
+      ]
+    },
+    {
+      "title": "Regulatory and Legal Requirements",
+      "items": [
+        {
+          "term": "Breach Notification Laws",
+          "def": "Legal requirements to notify affected individuals, regulators, or public about data breaches within specified timeframes."
+        },
+        {
+          "term": "Data Retention Requirements",
+          "def": "Legal or regulatory mandates specifying how long certain types of data must be preserved."
+        },
+        {
+          "term": "Legal Hold",
+          "def": "Process suspending normal data deletion to preserve information relevant to actual or anticipated litigation."
+        },
+        {
+          "term": "Evidence Preservation",
+          "def": "Maintaining integrity of potential evidence, ensuring it remains unaltered and admissible in legal proceedings."
+        },
+        {
+          "term": "Regulatory Reporting",
+          "def": "Mandatory notifications to regulatory bodies about security incidents, breaches, or compliance issues within required timeframes."
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "title": "Incident vs Event vs Alert",
+      "items": [
+        {
+          "aspect": "Event",
+          "description": "Any observable occurrence in a system or network. Most are normal activities (file access, login, process start)."
+        },
+        {
+          "aspect": "Alert",
+          "description": "Notification generated when an event matches detection rules or thresholds. May indicate potential security concern."
+        },
+        {
+          "aspect": "Incident",
+          "description": "Confirmed event that violates security policies or poses actual risk. Requires formal response and documentation."
+        }
+      ]
+    },
+    {
+      "title": "Containment vs Eradication vs Recovery",
+      "items": [
+        {
+          "aspect": "Containment",
+          "description": "Limit spread and damage. Isolate affected systems while keeping evidence intact. Short-term and long-term strategies."
+        },
+        {
+          "aspect": "Eradication",
+          "description": "Remove threat completely. Delete malware, close vulnerabilities, eliminate attacker access points and backdoors."
+        },
+        {
+          "aspect": "Recovery",
+          "description": "Restore normal operations. Bring systems back online, verify functionality, monitor for re-infection or persistence."
+        }
+      ]
+    },
+    {
+      "title": "RTO vs RPO vs MTD",
+      "items": [
+        {
+          "aspect": "Recovery Time Objective (RTO)",
+          "description": "How long system can be down. Target time for restoring operations after disruption. Drives recovery strategy selection."
+        },
+        {
+          "aspect": "Recovery Point Objective (RPO)",
+          "description": "How much data loss acceptable. Maximum age of data recovered. Determines backup frequency and technology."
+        },
+        {
+          "aspect": "Maximum Tolerable Downtime (MTD)",
+          "description": "Absolute maximum downtime before severe consequences. RTO must be less than MTD. Defines criticality."
+        }
+      ]
+    },
+    {
+      "title": "Hot Site vs Warm Site vs Cold Site",
+      "items": [
+        {
+          "aspect": "Hot Site",
+          "description": "Fully operational duplicate facility. Near-instant failover. Most expensive. Real-time or near-real-time data replication."
+        },
+        {
+          "aspect": "Warm Site",
+          "description": "Partially equipped facility. Has infrastructure but needs configuration. Hours to days recovery. Moderate cost."
+        },
+        {
+          "aspect": "Cold Site",
+          "description": "Empty facility with basic utilities. No equipment or data. Weeks to recover. Least expensive option."
+        }
+      ]
+    },
+    {
+      "title": "Full vs Incremental vs Differential Backup",
+      "items": [
+        {
+          "aspect": "Full Backup",
+          "description": "Complete copy of all data. Slow backup, fast restore. High storage use. Baseline for other backup types."
+        },
+        {
+          "aspect": "Incremental Backup",
+          "description": "Only changes since last backup. Fast backup, slow restore (needs full + all incrementals). Least storage."
+        },
+        {
+          "aspect": "Differential Backup",
+          "description": "All changes since last full. Moderate speed both ways. Needs full + last differential. Medium storage."
+        }
+      ]
+    },
+    {
+      "title": "Business Continuity vs Disaster Recovery",
+      "items": [
+        {
+          "aspect": "Business Continuity (BC)",
+          "description": "Maintaining all critical business operations during disruption. Broader scope. People, processes, facilities, communications."
+        },
+        {
+          "aspect": "Disaster Recovery (DR)",
+          "description": "Restoring IT systems and technology infrastructure after disaster. Narrower scope. Subset of BC focusing on technology."
+        },
+        {
+          "aspect": "Relationship",
+          "description": "DR is a component of BC. BC is proactive (continuity), DR is reactive (recovery). Both essential for resilience."
+        }
+      ]
+    },
+    {
+      "title": "Failover vs Failback",
+      "items": [
+        {
+          "aspect": "Failover",
+          "description": "Switching to backup/secondary system when primary fails. Can be automatic or manual. Goal: maintain availability."
+        },
+        {
+          "aspect": "Failback",
+          "description": "Returning operations to primary/original system after it's restored. Usually manual and planned. Reverses failover."
+        }
+      ]
+    },
+    {
+      "title": "Tabletop vs Simulation vs Full-Scale Exercise",
+      "items": [
+        {
+          "aspect": "Tabletop Exercise",
+          "description": "Discussion only, no execution. Walk through scenarios verbally. Low cost, identifies gaps. Done frequently."
+        },
+        {
+          "aspect": "Simulation Exercise",
+          "description": "Practice response without actual system changes. More realistic scenarios. Tests coordination and decision-making."
+        },
+        {
+          "aspect": "Full-Scale Test",
+          "description": "Complete execution including actual failover. Most realistic and disruptive. Validates entire plan. Done infrequently."
+        }
+      ]
+    },
+    {
+      "title": "Volatile vs Non-Volatile Data",
+      "items": [
+        {
+          "aspect": "Volatile Data",
+          "description": "Lost when power removed (RAM, cache, running processes, network connections). Collect first in forensics. Most fragile."
+        },
+        {
+          "aspect": "Non-Volatile Data",
+          "description": "Persists without power (hard drives, SSDs, logs, backups). Survives shutdown. Can be collected after volatile data."
+        }
+      ]
+    },
+    {
+      "title": "Incident Response vs Crisis Management",
+      "items": [
+        {
+          "aspect": "Incident Response",
+          "description": "Technical process handling security events. Focused on IT systems. Technical team led. Follows defined procedures."
+        },
+        {
+          "aspect": "Crisis Management",
+          "description": "Business-level response to major events threatening organization. Executive leadership. Broader scope including reputation, legal, financial."
+        },
+        {
+          "aspect": "Relationship",
+          "description": "Major security incidents may trigger crisis management. IR team reports to crisis management team during severe events."
+        }
+      ]
+    },
+    {
+      "title": "Evidence Collection vs Evidence Preservation",
+      "items": [
+        {
+          "aspect": "Evidence Collection",
+          "description": "Gathering digital or physical evidence from systems, devices, or locations. Must follow proper procedures and chain of custody."
+        },
+        {
+          "aspect": "Evidence Preservation",
+          "description": "Maintaining evidence integrity after collection. Protecting from alteration, damage, or destruction. Hash verification, secure storage."
+        }
+      ]
+    },
+    {
+      "title": "Backup vs Archive",
+      "items": [
+        {
+          "aspect": "Backup",
+          "description": "Copy for disaster recovery. Short-term retention. Regularly overwritten. Focus on operational continuity and quick restoration."
+        },
+        {
+          "aspect": "Archive",
+          "description": "Long-term preservation for compliance or historical purposes. Rarely accessed. Not overwritten. Often immutable storage."
+        }
+      ]
+    }
+  ]
+}

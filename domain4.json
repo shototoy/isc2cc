@@ -1,0 +1,508 @@
+{
+  "concepts": [
+    {
+      "title": "Network Architecture",
+      "items": [
+        {
+          "term": "OSI Model",
+          "def": "Seven-layer conceptual framework defining network communication functions: Physical, Data Link, Network, Transport, Session, Presentation, Application."
+        },
+        {
+          "term": "TCP/IP Model",
+          "def": "Four-layer practical model for internet communications: Network Access, Internet, Transport, Application. Basis of modern networking."
+        },
+        {
+          "term": "Local Area Network (LAN)",
+          "def": "Network connecting devices in limited geographical area (building, campus). High speed, low latency, privately owned."
+        },
+        {
+          "term": "Wide Area Network (WAN)",
+          "def": "Network spanning large geographical areas connecting multiple LANs. Lower speed, higher latency, often using carrier services."
+        },
+        {
+          "term": "Virtual Local Area Network (VLAN)",
+          "def": "Logical segmentation of physical network creating isolated broadcast domains. Improves security and performance."
+        },
+        {
+          "term": "Demilitarized Zone (DMZ)",
+          "def": "Network segment isolating public-facing services from internal network. Contains web servers, mail servers, FTP. Buffer zone."
+        },
+        {
+          "term": "Network Segmentation",
+          "def": "Dividing network into smaller segments to improve performance, security, and management. Limits broadcast domains and lateral movement."
+        },
+        {
+          "term": "Zero Trust Architecture",
+          "def": "Security model assuming no implicit trust. Verify every access request regardless of location. Never trust, always verify."
+        }
+      ]
+    },
+    {
+      "title": "Network Protocols",
+      "items": [
+        {
+          "term": "Internet Protocol (IP)",
+          "def": "Network layer protocol responsible for addressing and routing packets across networks. IPv4 uses 32-bit addresses, IPv6 uses 128-bit."
+        },
+        {
+          "term": "Transmission Control Protocol (TCP)",
+          "def": "Connection-oriented transport protocol ensuring reliable, ordered delivery. Establishes sessions, performs error checking, flow control."
+        },
+        {
+          "term": "User Datagram Protocol (UDP)",
+          "def": "Connectionless transport protocol for fast, lightweight communication. No reliability guarantees. Used for streaming, DNS, VoIP."
+        },
+        {
+          "term": "Hypertext Transfer Protocol (HTTP/HTTPS)",
+          "def": "Application protocol for web communication. HTTPS adds TLS/SSL encryption for secure data transfer."
+        },
+        {
+          "term": "File Transfer Protocol (FTP/SFTP)",
+          "def": "Protocol for transferring files between systems. FTP is insecure (plaintext). SFTP adds SSH encryption."
+        },
+        {
+          "term": "Simple Mail Transfer Protocol (SMTP)",
+          "def": "Protocol for sending email between servers. Works with POP3 or IMAP for receiving email."
+        },
+        {
+          "term": "Domain Name System (DNS)",
+          "def": "System translating human-readable domain names to IP addresses. Hierarchical, distributed database. Critical internet infrastructure."
+        },
+        {
+          "term": "Dynamic Host Configuration Protocol (DHCP)",
+          "def": "Protocol automatically assigning IP addresses and network configuration to devices. Simplifies network management."
+        }
+      ]
+    },
+    {
+      "title": "Network Devices",
+      "items": [
+        {
+          "term": "Router",
+          "def": "Layer 3 device forwarding packets between networks based on IP addresses. Makes routing decisions, connects different networks."
+        },
+        {
+          "term": "Switch",
+          "def": "Layer 2 device forwarding frames within network based on MAC addresses. Creates dedicated connections, segments collision domains."
+        },
+        {
+          "term": "Hub",
+          "def": "Layer 1 device broadcasting data to all connected devices. No intelligence. Creates single collision domain. Largely obsolete."
+        },
+        {
+          "term": "Bridge",
+          "def": "Layer 2 device connecting network segments, filtering traffic based on MAC addresses. Reduces collision domains."
+        },
+        {
+          "term": "Access Point (AP)",
+          "def": "Device providing wireless network connectivity. Bridges wireless clients to wired network. Central point for WLAN."
+        },
+        {
+          "term": "Firewall",
+          "def": "Security device filtering traffic based on rules. Can be hardware or software. Controls traffic between network segments."
+        },
+        {
+          "term": "Proxy Server",
+          "def": "Intermediary server handling requests on behalf of clients. Provides caching, filtering, anonymity, and access control."
+        },
+        {
+          "term": "Load Balancer",
+          "def": "Device distributing network traffic across multiple servers. Improves availability, performance, and scalability."
+        }
+      ]
+    },
+    {
+      "title": "Firewall Technologies",
+      "items": [
+        {
+          "term": "Packet Filtering Firewall",
+          "def": "Filters traffic based on headers (source/destination IP, port, protocol). Stateless. Fast but limited security. Layer 3-4."
+        },
+        {
+          "term": "Stateful Inspection Firewall",
+          "def": "Tracks connection state, understands context of traffic. More secure than packet filtering. Monitors TCP handshakes and sessions."
+        },
+        {
+          "term": "Application Layer Firewall",
+          "def": "Operates at Layer 7, inspects application data. Deep packet inspection. Can filter based on URLs, content, applications."
+        },
+        {
+          "term": "Next-Generation Firewall (NGFW)",
+          "def": "Advanced firewall combining traditional filtering with IPS, application awareness, SSL inspection, threat intelligence."
+        },
+        {
+          "term": "Web Application Firewall (WAF)",
+          "def": "Protects web applications from attacks like SQL injection, XSS, CSRF. Operates at HTTP/HTTPS level."
+        },
+        {
+          "term": "Unified Threat Management (UTM)",
+          "def": "Single device combining multiple security functions: firewall, IPS, antivirus, content filtering, VPN. All-in-one security."
+        }
+      ]
+    },
+    {
+      "title": "Intrusion Detection and Prevention",
+      "items": [
+        {
+          "term": "Intrusion Detection System (IDS)",
+          "def": "Passive monitoring system detecting suspicious activities and policy violations. Alerts administrators but doesn't block traffic."
+        },
+        {
+          "term": "Intrusion Prevention System (IPS)",
+          "def": "Active system detecting and blocking malicious traffic in real-time. Inline deployment. Can impact performance."
+        },
+        {
+          "term": "Network-Based IDS/IPS (NIDS/NIPS)",
+          "def": "Monitors network traffic at strategic points. Analyzes packets for known attack signatures and anomalies."
+        },
+        {
+          "term": "Host-Based IDS/IPS (HIDS/HIPS)",
+          "def": "Monitors activities on individual systems. Examines logs, file integrity, system calls. Detects host-specific attacks."
+        },
+        {
+          "term": "Signature-Based Detection",
+          "def": "Identifies threats by matching against known attack patterns. Fast and accurate for known threats. Ineffective against zero-days."
+        },
+        {
+          "term": "Anomaly-Based Detection",
+          "def": "Identifies threats by detecting deviations from normal behavior baseline. Can detect unknown attacks but higher false positives."
+        }
+      ]
+    },
+    {
+      "title": "Virtual Private Networks (VPN)",
+      "items": [
+        {
+          "term": "Virtual Private Network (VPN)",
+          "def": "Encrypted tunnel over public networks providing secure remote access or site-to-site connectivity. Protects data in transit."
+        },
+        {
+          "term": "Remote Access VPN",
+          "def": "Allows individual users to connect securely to corporate network from remote locations. Client-to-site connection."
+        },
+        {
+          "term": "Site-to-Site VPN",
+          "def": "Connects entire networks together over internet. Links branch offices to headquarters. Always-on connection between networks."
+        },
+        {
+          "term": "IPSec (Internet Protocol Security)",
+          "def": "Suite of protocols encrypting and authenticating IP packets. Works at network layer. Used for VPNs. AH (authentication) and ESP (encryption)."
+        },
+        {
+          "term": "SSL/TLS VPN",
+          "def": "VPN using SSL/TLS protocols. Browser-based, no special client needed. Works at transport/application layer. Easier deployment."
+        },
+        {
+          "term": "Split Tunneling",
+          "def": "VPN configuration routing some traffic through VPN tunnel while other traffic goes directly to internet. Performance vs security tradeoff."
+        }
+      ]
+    },
+    {
+      "title": "Wireless Security",
+      "items": [
+        {
+          "term": "Service Set Identifier (SSID)",
+          "def": "Network name identifying wireless network. Can be broadcast or hidden. Not a security feature despite common misconception."
+        },
+        {
+          "term": "Wired Equivalent Privacy (WEP)",
+          "def": "Original WiFi encryption standard. Severely flawed and easily cracked. Should never be used. Obsolete."
+        },
+        {
+          "term": "WiFi Protected Access (WPA)",
+          "def": "Improved security replacing WEP. Uses TKIP encryption. Still vulnerable. Deprecated in favor of WPA2/WPA3."
+        },
+        {
+          "term": "WPA2",
+          "def": "Current standard using AES encryption. Personal (PSK) for home, Enterprise (802.1X) for business. KRACK vulnerability discovered."
+        },
+        {
+          "term": "WPA3",
+          "def": "Latest standard with improved security. Protects against brute force, provides forward secrecy. Simultaneous Authentication of Equals (SAE)."
+        },
+        {
+          "term": "802.1X",
+          "def": "Port-based network access control. Requires authentication before granting network access. Used in enterprise wireless and wired networks."
+        },
+        {
+          "term": "Rogue Access Point",
+          "def": "Unauthorized wireless access point on network. Security risk providing backdoor access. Must be detected and removed."
+        },
+        {
+          "term": "Evil Twin",
+          "def": "Malicious access point mimicking legitimate network. Tricks users into connecting. Intercepts traffic. Man-in-the-middle attack."
+        }
+      ]
+    },
+    {
+      "title": "Network Attacks",
+      "items": [
+        {
+          "term": "Denial of Service (DoS)",
+          "def": "Attack overwhelming system with traffic to disrupt availability. Single source. Makes service unavailable to legitimate users."
+        },
+        {
+          "term": "Distributed Denial of Service (DDoS)",
+          "def": "DoS attack from multiple sources simultaneously. Uses botnets. Much harder to defend against than single-source DoS."
+        },
+        {
+          "term": "Man-in-the-Middle (MitM)",
+          "def": "Attacker intercepts communications between two parties. Can eavesdrop or modify traffic. ARP spoofing, session hijacking."
+        },
+        {
+          "term": "DNS Poisoning",
+          "def": "Corrupting DNS cache with false information. Redirects users to malicious sites. Compromises DNS server or cache."
+        },
+        {
+          "term": "ARP Spoofing",
+          "def": "Sending fake ARP messages to associate attacker's MAC with victim's IP. Enables man-in-the-middle attacks on LANs."
+        },
+        {
+          "term": "Port Scanning",
+          "def": "Probing systems to discover open ports and services. Reconnaissance technique. Identifies potential attack vectors."
+        },
+        {
+          "term": "Packet Sniffing",
+          "def": "Capturing and analyzing network traffic. Legitimate for troubleshooting, malicious for stealing data. Promiscuous mode required."
+        },
+        {
+          "term": "Session Hijacking",
+          "def": "Taking over authenticated session by stealing or predicting session tokens. Bypasses authentication."
+        }
+      ]
+    },
+    {
+      "title": "Network Security Best Practices",
+      "items": [
+        {
+          "term": "Network Segmentation",
+          "def": "Dividing network into security zones based on trust levels and requirements. Limits blast radius of breaches."
+        },
+        {
+          "term": "Defense in Depth",
+          "def": "Layered security approach using multiple controls at different layers. If one fails, others still protect."
+        },
+        {
+          "term": "Least Privilege",
+          "def": "Granting minimum network access necessary. Applies to devices, services, and users. Reduces attack surface."
+        },
+        {
+          "term": "Disable Unused Services",
+          "def": "Turning off unnecessary network services and closing unused ports. Reduces attack surface and potential vulnerabilities."
+        },
+        {
+          "term": "Network Monitoring",
+          "def": "Continuous observation of network traffic and device behavior. Detects anomalies, performance issues, security incidents."
+        },
+        {
+          "term": "Patch Management",
+          "def": "Systematic process for updating network devices and systems with security patches. Closes known vulnerabilities."
+        },
+        {
+          "term": "Strong Encryption",
+          "def": "Using robust encryption protocols for data in transit. TLS 1.2+, IPSec, WPA2/WPA3. Protects against eavesdropping."
+        }
+      ]
+    },
+    {
+      "title": "Network Monitoring and Management",
+      "items": [
+        {
+          "term": "Simple Network Management Protocol (SNMP)",
+          "def": "Protocol for collecting and organizing information about network devices. Monitors health, performance, configuration."
+        },
+        {
+          "term": "NetFlow",
+          "def": "Cisco technology capturing IP traffic information. Provides visibility into network usage patterns and anomalies."
+        },
+        {
+          "term": "Packet Analyzer (Sniffer)",
+          "def": "Tool capturing and analyzing network packets. Wireshark, tcpdump. Used for troubleshooting and security analysis."
+        },
+        {
+          "term": "Network Tap",
+          "def": "Hardware device copying network traffic for monitoring without affecting performance. Provides full visibility for security tools."
+        },
+        {
+          "term": "Port Mirroring (SPAN)",
+          "def": "Switch feature copying traffic from one port to another for monitoring. Alternative to network tap using existing infrastructure."
+        },
+        {
+          "term": "Baseline",
+          "def": "Documented normal network behavior and performance metrics. Reference for detecting anomalies and measuring changes."
+        },
+        {
+          "term": "Bandwidth Management",
+          "def": "Controlling network traffic to optimize performance and prevent congestion. QoS, traffic shaping, rate limiting."
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "title": "TCP vs UDP",
+      "items": [
+        {
+          "aspect": "TCP (Transmission Control Protocol)",
+          "description": "Connection-oriented. Reliable delivery with error checking, ordering, retransmission. Slower. Used for HTTP, FTP, email."
+        },
+        {
+          "aspect": "UDP (User Datagram Protocol)",
+          "description": "Connectionless. No reliability guarantees. Faster with less overhead. Used for DNS, streaming, VoIP, gaming."
+        },
+        {
+          "aspect": "Use Cases",
+          "description": "TCP when accuracy matters (files, emails). UDP when speed matters and some loss acceptable (video, voice, DNS)."
+        }
+      ]
+    },
+    {
+      "title": "Router vs Switch vs Hub",
+      "items": [
+        {
+          "aspect": "Router",
+          "description": "Layer 3 device. Routes between networks using IP addresses. Intelligent path selection. Connects different networks."
+        },
+        {
+          "aspect": "Switch",
+          "description": "Layer 2 device. Forwards within network using MAC addresses. Creates dedicated connections. Segments collision domains."
+        },
+        {
+          "aspect": "Hub",
+          "description": "Layer 1 device. Broadcasts to all ports. No intelligence. Single collision domain. Obsolete technology."
+        }
+      ]
+    },
+    {
+      "title": "IDS vs IPS",
+      "items": [
+        {
+          "aspect": "Intrusion Detection System (IDS)",
+          "description": "Passive monitoring. Detects and alerts on threats. Out-of-band deployment. Cannot stop attacks, only reports them."
+        },
+        {
+          "aspect": "Intrusion Prevention System (IPS)",
+          "description": "Active protection. Detects and blocks threats. Inline deployment. Can stop attacks in real-time but may impact performance."
+        }
+      ]
+    },
+    {
+      "title": "Stateful vs Stateless Firewall",
+      "items": [
+        {
+          "aspect": "Stateful Firewall",
+          "description": "Tracks connection state and context. Understands sessions. More secure. Can make intelligent decisions based on traffic history."
+        },
+        {
+          "aspect": "Stateless Firewall",
+          "description": "Filters each packet independently. No context or memory. Faster but less secure. Simple packet filtering based on headers."
+        }
+      ]
+    },
+    {
+      "title": "Network-Based vs Host-Based IDS/IPS",
+      "items": [
+        {
+          "aspect": "Network-Based (NIDS/NIPS)",
+          "description": "Monitors network traffic at strategic points. Protects entire network segment. Cannot see encrypted traffic or host activities."
+        },
+        {
+          "aspect": "Host-Based (HIDS/HIPS)",
+          "description": "Monitors individual systems. Sees encrypted traffic and local activities. More detailed but requires agent on each host."
+        }
+      ]
+    },
+    {
+      "title": "Signature-Based vs Anomaly-Based Detection",
+      "items": [
+        {
+          "aspect": "Signature-Based Detection",
+          "description": "Matches known attack patterns. Fast and accurate for known threats. Low false positives. Cannot detect zero-day attacks."
+        },
+        {
+          "aspect": "Anomaly-Based Detection",
+          "description": "Detects deviations from normal baseline. Can find unknown threats. Higher false positives. Requires training period."
+        }
+      ]
+    },
+    {
+      "title": "IPSec vs SSL/TLS VPN",
+      "items": [
+        {
+          "aspect": "IPSec VPN",
+          "description": "Network layer (Layer 3). Requires client software. More complex setup. Better for site-to-site. Encrypts all IP traffic."
+        },
+        {
+          "aspect": "SSL/TLS VPN",
+          "description": "Transport/Application layer. Browser-based, no client needed. Easier deployment. Better for remote access. Application-specific."
+        }
+      ]
+    },
+    {
+      "title": "Remote Access VPN vs Site-to-Site VPN",
+      "items": [
+        {
+          "aspect": "Remote Access VPN",
+          "description": "Individual users to network. Client-to-site. On-demand connection. Used by remote workers. End-user focused."
+        },
+        {
+          "aspect": "Site-to-Site VPN",
+          "description": "Network to network. Always-on connection. Connects branch offices. Gateway-to-gateway. Infrastructure focused."
+        }
+      ]
+    },
+    {
+      "title": "WPA2 vs WPA3",
+      "items": [
+        {
+          "aspect": "WPA2",
+          "description": "Current standard. AES encryption. Vulnerable to KRACK attack and brute force. PSK and Enterprise modes available."
+        },
+        {
+          "aspect": "WPA3",
+          "description": "Latest standard. Enhanced security. Protects against brute force. Forward secrecy. SAE (Simultaneous Authentication of Equals)."
+        }
+      ]
+    },
+    {
+      "title": "DoS vs DDoS",
+      "items": [
+        {
+          "aspect": "Denial of Service (DoS)",
+          "description": "Attack from single source. Easier to defend against. Can block single IP. Limited impact compared to DDoS."
+        },
+        {
+          "aspect": "Distributed Denial of Service (DDoS)",
+          "description": "Attack from multiple sources (botnet). Much harder to defend. Cannot simply block IPs. Massive scale possible."
+        }
+      ]
+    },
+    {
+      "title": "Proxy vs Firewall",
+      "items": [
+        {
+          "aspect": "Proxy Server",
+          "description": "Intermediary handling requests. Provides caching, content filtering, anonymity. Application-level gateway. Can modify traffic."
+        },
+        {
+          "aspect": "Firewall",
+          "description": "Security boundary filtering traffic. Enforces access policies. Network-level protection. Typically doesn't cache or modify content."
+        }
+      ]
+    },
+    {
+      "title": "Hub vs Switch",
+      "items": [
+        {
+          "aspect": "Hub",
+          "description": "Layer 1. Broadcasts to all ports. No intelligence. Single collision domain. Half-duplex. Obsolete technology."
+        },
+        {
+          "aspect": "Switch",
+          "description": "Layer 2. Forwards to specific port using MAC table. Intelligent. Separate collision domains. Full-duplex. Modern standard."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "concepts": [
+    {
+      "title": "Physical Access Controls",
+      "items": [
+        {
+          "term": "Perimeter Security",
+          "def": "Outermost layer of physical security including fencing, gates, lighting, and landscaping to deter and detect unauthorized access."
+        },
+        {
+          "term": "Access Control Vestibule (Mantrap)",
+          "def": "Small room with two interlocking doors ensuring only one person passes at a time, preventing tailgating and piggybacking."
+        },
+        {
+          "term": "Bollards",
+          "def": "Short vertical posts preventing vehicle access to sensitive areas while allowing pedestrian traffic."
+        },
+        {
+          "term": "Badge System",
+          "def": "Identification cards with magnetic stripes, proximity readers, or smart chips granting authorized physical access."
+        },
+        {
+          "term": "Biometric Readers",
+          "def": "Physical access control using unique biological characteristics (fingerprint, iris, facial recognition, hand geometry)."
+        },
+        {
+          "term": "Security Guards",
+          "def": "Personnel monitoring facilities, verifying identities, responding to incidents, and providing human judgment in security decisions."
+        },
+        {
+          "term": "Locks and Keys",
+          "def": "Traditional physical security mechanisms. Include mechanical locks, electronic locks, cipher locks, and key management systems."
+        },
+        {
+          "term": "Surveillance Systems (CCTV)",
+          "def": "Cameras monitoring and recording activities in and around facilities. Provides deterrence, detection, and forensic evidence."
+        }
+      ]
+    },
+    {
+      "title": "Logical Access Controls",
+      "items": [
+        {
+          "term": "Authentication",
+          "def": "Process verifying user identity before granting system access using credentials like passwords, tokens, or biometrics."
+        },
+        {
+          "term": "Authorization",
+          "def": "Determining what resources and actions authenticated users are permitted to access based on permissions and privileges."
+        },
+        {
+          "term": "Accounting (Auditing)",
+          "def": "Recording user activities, access attempts, and system events for security monitoring, compliance, and forensic investigation."
+        },
+        {
+          "term": "Access Control Lists (ACLs)",
+          "def": "Lists defining which users or systems have permission to access specific resources and what operations they can perform."
+        },
+        {
+          "term": "User Provisioning",
+          "def": "Process of creating, modifying, and deleting user accounts and permissions as employees join, change roles, or leave."
+        },
+        {
+          "term": "De-provisioning",
+          "def": "Removing user access rights when employees leave or no longer need access. Critical for preventing unauthorized access."
+        }
+      ]
+    },
+    {
+      "title": "Access Control Models",
+      "items": [
+        {
+          "term": "Discretionary Access Control (DAC)",
+          "def": "Owner of resource controls access permissions. Flexible but less secure. Users can grant access to others (Windows NTFS)."
+        },
+        {
+          "term": "Mandatory Access Control (MAC)",
+          "def": "System enforces access based on security labels and clearances. Rigid but highly secure. Used in military and classified environments."
+        },
+        {
+          "term": "Role-Based Access Control (RBAC)",
+          "def": "Access based on user roles within organization. Scalable and manageable. Permissions assigned to roles, users assigned to roles."
+        },
+        {
+          "term": "Rule-Based Access Control",
+          "def": "Access determined by administrator-defined rules (time of day, location, device type). Applied globally across systems."
+        },
+        {
+          "term": "Attribute-Based Access Control (ABAC)",
+          "def": "Dynamic access decisions based on user attributes, resource attributes, and environmental conditions. Highly granular and flexible."
+        }
+      ]
+    },
+    {
+      "title": "Authentication Methods",
+      "items": [
+        {
+          "term": "Something You Know",
+          "def": "Knowledge-based authentication: passwords, PINs, passphrases, security questions. Most common but vulnerable to social engineering."
+        },
+        {
+          "term": "Something You Have",
+          "def": "Possession-based authentication: smart cards, hardware tokens, mobile devices, key fobs. Physical object required for access."
+        },
+        {
+          "term": "Something You Are",
+          "def": "Biometric authentication: fingerprints, facial recognition, iris scans, voice recognition, palm prints. Based on physical characteristics."
+        },
+        {
+          "term": "Something You Do",
+          "def": "Behavioral biometrics: typing patterns, signature dynamics, gait analysis. Based on unique behavioral characteristics."
+        },
+        {
+          "term": "Somewhere You Are",
+          "def": "Location-based authentication: GPS coordinates, IP address geolocation, network location. Context-aware access control."
+        },
+        {
+          "term": "Multi-Factor Authentication (MFA)",
+          "def": "Combining two or more different authentication factors. Significantly increases security by requiring multiple verification methods."
+        }
+      ]
+    },
+    {
+      "title": "Password Security",
+      "items": [
+        {
+          "term": "Password Complexity",
+          "def": "Requirements for minimum length, character types (uppercase, lowercase, numbers, symbols) making passwords harder to crack."
+        },
+        {
+          "term": "Password Expiration",
+          "def": "Policy requiring users to change passwords periodically. Modern guidance questions frequent changes due to user behavior."
+        },
+        {
+          "term": "Password History",
+          "def": "System tracking previous passwords preventing users from reusing recent passwords when required to change."
+        },
+        {
+          "term": "Account Lockout",
+          "def": "Automatic account disabling after specified number of failed login attempts. Prevents brute force attacks but enables DoS."
+        },
+        {
+          "term": "Password Manager",
+          "def": "Software securely storing and generating complex unique passwords. Users remember one strong master password."
+        },
+        {
+          "term": "Password Hashing",
+          "def": "One-way cryptographic transformation storing passwords securely. Systems compare hashes, never storing plaintext passwords."
+        },
+        {
+          "term": "Salt",
+          "def": "Random data added to passwords before hashing. Prevents rainbow table attacks and ensures identical passwords have different hashes."
+        }
+      ]
+    },
+    {
+      "title": "Single Sign-On (SSO) and Federation",
+      "items": [
+        {
+          "term": "Single Sign-On (SSO)",
+          "def": "Authentication once to access multiple applications within same organization. Improves user experience and reduces password fatigue."
+        },
+        {
+          "term": "Federated Identity",
+          "def": "Trusted relationship between organizations allowing users to access resources across domains using single set of credentials."
+        },
+        {
+          "term": "Security Assertion Markup Language (SAML)",
+          "def": "XML-based standard for exchanging authentication and authorization data between identity provider and service provider."
+        },
+        {
+          "term": "OAuth",
+          "def": "Open standard for token-based authorization allowing third-party applications limited access to user resources without exposing passwords."
+        },
+        {
+          "term": "OpenID Connect",
+          "def": "Authentication layer built on OAuth 2.0 enabling client applications to verify user identity based on authentication by authorization server."
+        },
+        {
+          "term": "Identity Provider (IdP)",
+          "def": "System that creates, maintains, and manages identity information while providing authentication services to applications."
+        }
+      ]
+    },
+    {
+      "title": "Privileged Access Management",
+      "items": [
+        {
+          "term": "Privileged Account",
+          "def": "Account with elevated permissions exceeding normal users. Includes administrator, root, service accounts. High-value targets."
+        },
+        {
+          "term": "Least Privilege",
+          "def": "Granting minimum access rights necessary to perform job functions. Reduces risk from compromised accounts or insider threats."
+        },
+        {
+          "term": "Privileged Access Management (PAM)",
+          "def": "Solutions managing, monitoring, and securing privileged accounts. Includes password vaulting, session monitoring, just-in-time access."
+        },
+        {
+          "term": "Just-in-Time (JIT) Access",
+          "def": "Granting elevated privileges only when needed for specific period. Access automatically expires, reducing standing privileges."
+        },
+        {
+          "term": "Privileged Session Monitoring",
+          "def": "Recording and analyzing activities performed using privileged accounts for security monitoring and compliance."
+        },
+        {
+          "term": "Service Account",
+          "def": "Non-human account used by applications and services. Often have broad permissions and require special management."
+        }
+      ]
+    },
+    {
+      "title": "Access Control Best Practices",
+      "items": [
+        {
+          "term": "Separation of Duties",
+          "def": "Dividing critical tasks among multiple people preventing any single person from compromising security or committing fraud."
+        },
+        {
+          "term": "Need to Know",
+          "def": "Granting access only to information required for specific job responsibilities, regardless of security clearance level."
+        },
+        {
+          "term": "Job Rotation",
+          "def": "Periodically moving employees between roles. Detects fraud, reduces insider threat risk, ensures knowledge distribution."
+        },
+        {
+          "term": "Mandatory Vacation",
+          "def": "Requiring employees to take consecutive time off. Helps detect fraudulent activities that require continuous presence."
+        },
+        {
+          "term": "Time-of-Day Restrictions",
+          "def": "Limiting system access to specific hours matching work schedules. Detects unauthorized access during off-hours."
+        },
+        {
+          "term": "Access Reviews",
+          "def": "Periodic examination of user permissions ensuring access remains appropriate. Remove unnecessary privileges and orphaned accounts."
+        },
+        {
+          "term": "Onboarding/Offboarding",
+          "def": "Formal processes for granting access when employees join and promptly removing access when they leave or change roles."
+        }
+      ]
+    },
+    {
+      "title": "Access Control Technologies",
+      "items": [
+        {
+          "term": "Directory Services",
+          "def": "Centralized systems storing and managing user accounts and permissions. Examples: Active Directory, LDAP, Azure AD."
+        },
+        {
+          "term": "RADIUS",
+          "def": "Remote Authentication Dial-In User Service. Protocol providing centralized authentication, authorization, and accounting for network access."
+        },
+        {
+          "term": "TACACS+",
+          "def": "Terminal Access Controller Access-Control System Plus. Cisco protocol separating authentication, authorization, and accounting. More granular than RADIUS."
+        },
+        {
+          "term": "Kerberos",
+          "def": "Network authentication protocol using tickets and symmetric key cryptography. Prevents password transmission over networks."
+        },
+        {
+          "term": "Certificate-Based Authentication",
+          "def": "Using digital certificates and PKI to verify identity. More secure than passwords, used for VPNs, wireless networks, websites."
+        },
+        {
+          "term": "Smart Card",
+          "def": "Physical card with embedded chip storing digital certificates and cryptographic keys for strong authentication."
+        }
+      ]
+    },
+    {
+      "title": "Monitoring and Auditing",
+      "items": [
+        {
+          "term": "Audit Logs",
+          "def": "Records of system activities including logins, file access, configuration changes. Essential for security monitoring and compliance."
+        },
+        {
+          "term": "User Activity Monitoring",
+          "def": "Tracking and recording user actions within systems for security analysis, insider threat detection, and compliance."
+        },
+        {
+          "term": "Failed Login Attempts",
+          "def": "Recording unsuccessful authentication attempts. Multiple failures may indicate brute force attacks or credential guessing."
+        },
+        {
+          "term": "Anomaly Detection",
+          "def": "Identifying unusual access patterns or behaviors deviating from normal baselines. May indicate compromised accounts."
+        },
+        {
+          "term": "Log Retention",
+          "def": "Policy defining how long audit logs are stored. Balances forensic needs, compliance requirements, and storage costs."
+        },
+        {
+          "term": "Security Information and Event Management (SIEM)",
+          "def": "Platform aggregating and analyzing log data from multiple sources for real-time security monitoring and incident detection."
+        },
+        {
+          "term": "Clipping Level",
+          "def": "Threshold for acceptable number of violations before triggering alerts. Reduces false positives from normal errors."
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "title": "Physical vs Logical Access Controls",
+      "items": [
+        {
+          "aspect": "Physical Access Controls",
+          "description": "Protect physical assets and facilities. Guards, locks, badges, cameras, fences. Tangible security measures."
+        },
+        {
+          "aspect": "Logical Access Controls",
+          "description": "Protect digital resources and data. Passwords, permissions, encryption, firewalls. Technology-based security measures."
+        },
+        {
+          "aspect": "Relationship",
+          "description": "Both essential for defense in depth. Physical security protects systems; logical security protects data. Complement each other."
+        }
+      ]
+    },
+    {
+      "title": "DAC vs MAC vs RBAC",
+      "items": [
+        {
+          "aspect": "Discretionary Access Control (DAC)",
+          "description": "Owner controls access. Flexible but risky. Users can share access. Common in commercial systems (Windows, Linux)."
+        },
+        {
+          "aspect": "Mandatory Access Control (MAC)",
+          "description": "System enforces access via labels. Rigid but secure. Users cannot override. Used in classified environments."
+        },
+        {
+          "aspect": "Role-Based Access Control (RBAC)",
+          "description": "Access based on job roles. Scalable for enterprises. Permissions assigned to roles, users assigned to roles."
+        }
+      ]
+    },
+    {
+      "title": "Authentication vs Authorization",
+      "items": [
+        {
+          "aspect": "Authentication",
+          "description": "Verifying identity (Who are you?). Proving you are who you claim to be. First step in access control."
+        },
+        {
+          "aspect": "Authorization",
+          "description": "Granting permissions (What can you do?). Determining access rights after authentication. Second step in access control."
+        },
+        {
+          "aspect": "Sequence",
+          "description": "Always authenticate first, then authorize. Cannot authorize without knowing identity. Both required for secure access."
+        }
+      ]
+    },
+    {
+      "title": "Identification vs Authentication vs Authorization",
+      "items": [
+        {
+          "aspect": "Identification",
+          "description": "Claiming identity (username, employee ID). Making an assertion about who you are. No proof required yet."
+        },
+        {
+          "aspect": "Authentication",
+          "description": "Proving identity (password, biometric). Providing evidence supporting your identity claim. Verification step."
+        },
+        {
+          "aspect": "Authorization",
+          "description": "Granting access based on identity. Determining permissions and privileges. Access decision step."
+        }
+      ]
+    },
+    {
+      "title": "SSO vs Federated Identity",
+      "items": [
+        {
+          "aspect": "Single Sign-On (SSO)",
+          "description": "One authentication for multiple applications within organization. Internal systems. Centralized authentication."
+        },
+        {
+          "aspect": "Federated Identity",
+          "description": "Authentication across organizational boundaries. Trust relationships between organizations. Cross-domain access (SAML, OAuth)."
+        }
+      ]
+    },
+    {
+      "title": "RADIUS vs TACACS+",
+      "items": [
+        {
+          "aspect": "RADIUS",
+          "description": "Combines authentication and authorization. UDP transport. Encrypts only password. Open standard. Network access focus."
+        },
+        {
+          "aspect": "TACACS+",
+          "description": "Separates AAA functions. TCP transport. Encrypts entire payload. Cisco proprietary. Device administration focus. More granular."
+        }
+      ]
+    },
+    {
+      "title": "Something You Know vs Have vs Are",
+      "items": [
+        {
+          "aspect": "Something You Know",
+          "description": "Knowledge factor: passwords, PINs, answers. Vulnerable to sharing, guessing, social engineering. Easiest to implement."
+        },
+        {
+          "aspect": "Something You Have",
+          "description": "Possession factor: tokens, cards, phones. Can be lost or stolen. Physical object required."
+        },
+        {
+          "aspect": "Something You Are",
+          "description": "Inherence factor: biometrics (fingerprint, face, iris). Cannot be shared or lost. Privacy concerns. Most secure."
+        }
+      ]
+    },
+    {
+      "title": "Centralized vs Decentralized Access Control",
+      "items": [
+        {
+          "aspect": "Centralized",
+          "description": "Single authority managing access (Active Directory, LDAP). Consistent policies. Easier management. Single point of failure."
+        },
+        {
+          "aspect": "Decentralized",
+          "description": "Multiple authorities managing their own resources. Local control. Harder to maintain consistency. No single point of failure."
+        }
+      ]
+    },
+    {
+      "title": "Implicit Deny vs Explicit Deny",
+      "items": [
+        {
+          "aspect": "Implicit Deny",
+          "description": "Default: everything not explicitly permitted is denied. Secure by default. Common in firewalls and access controls."
+        },
+        {
+          "aspect": "Explicit Deny",
+          "description": "Specifically stated denial of access. Overrides permit rules. Used for exceptions to general permit rules."
+        }
+      ]
+    },
+    {
+      "title": "Access Control List vs Capability List",
+      "items": [
+        {
+          "aspect": "Access Control List (ACL)",
+          "description": "Resource-centric. Lists users/groups with access to specific resource. Attached to objects. Easy to see who accesses resource."
+        },
+        {
+          "aspect": "Capability List",
+          "description": "User-centric. Lists resources accessible by specific user. Attached to subjects. Easy to see what user can access."
+        }
+      ]
+    },
+    {
+      "title": "Account Lockout vs Account Disablement",
+      "items": [
+        {
+          "aspect": "Account Lockout",
+          "description": "Temporary automatic suspension after failed login attempts. Prevents brute force. Auto-unlocks after time or admin action."
+        },
+        {
+          "aspect": "Account Disablement",
+          "description": "Manual permanent or long-term deactivation. For terminated employees, unused accounts, policy violations. Requires admin to re-enable."
+        }
+      ]
+    },
+    {
+      "title": "OAuth vs OpenID Connect",
+      "items": [
+        {
+          "aspect": "OAuth 2.0",
+          "description": "Authorization framework. Allows limited access to resources without sharing passwords. Access tokens. Delegation protocol."
+        },
+        {
+          "aspect": "OpenID Connect",
+          "description": "Authentication layer built on OAuth 2.0. Verifies user identity. ID tokens in addition to access tokens. Adds authentication to OAuth."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "concepts": [
+    {
+      "title": "Data Security",
+      "items": [
+        {
+          "term": "Data at Rest",
+          "def": "Data stored on physical media (hard drives, SSDs, tapes, databases). Requires encryption, access controls, and physical security."
+        },
+        {
+          "term": "Data in Transit",
+          "def": "Data moving across networks or between systems. Protected using TLS/SSL, VPNs, IPSec. Vulnerable to interception."
+        },
+        {
+          "term": "Data in Use",
+          "def": "Data actively being processed in memory or CPU. Most vulnerable state. Protected by application security and memory encryption."
+        },
+        {
+          "term": "Data Classification",
+          "def": "Categorizing data based on sensitivity and criticality (Public, Internal, Confidential, Restricted). Determines protection requirements."
+        },
+        {
+          "term": "Data Loss Prevention (DLP)",
+          "def": "Technologies and processes preventing unauthorized data disclosure or exfiltration. Monitors, detects, and blocks sensitive data transfer."
+        },
+        {
+          "term": "Data Masking",
+          "def": "Obscuring sensitive data with modified content while maintaining format and usability for testing or non-production environments."
+        },
+        {
+          "term": "Tokenization",
+          "def": "Replacing sensitive data with non-sensitive tokens. Original data stored securely, tokens used in applications. Common in payment processing."
+        },
+        {
+          "term": "Data Retention",
+          "def": "Policy defining how long data must be kept before deletion. Balances legal requirements, business needs, and storage costs."
+        }
+      ]
+    },
+    {
+      "title": "Cryptography",
+      "items": [
+        {
+          "term": "Encryption",
+          "def": "Converting plaintext to ciphertext using algorithms and keys. Protects confidentiality. Reversible with proper key."
+        },
+        {
+          "term": "Decryption",
+          "def": "Converting ciphertext back to plaintext using the appropriate key. Reverse of encryption process."
+        },
+        {
+          "term": "Symmetric Encryption",
+          "def": "Single shared key for encryption and decryption. Fast. Key distribution challenge. Examples: AES, DES, 3DES, Blowfish."
+        },
+        {
+          "term": "Asymmetric Encryption",
+          "def": "Public-private key pair. Public key encrypts, private key decrypts. Solves key distribution. Slower. Examples: RSA, ECC, ElGamal."
+        },
+        {
+          "term": "Hashing",
+          "def": "One-way function creating fixed-size output (hash/digest) from input. Ensures integrity. Cannot be reversed. Examples: SHA-256, MD5."
+        },
+        {
+          "term": "Digital Signature",
+          "def": "Encrypted hash proving authenticity and integrity. Created with private key, verified with public key. Provides non-repudiation."
+        },
+        {
+          "term": "Public Key Infrastructure (PKI)",
+          "def": "Framework managing digital certificates and public-key encryption. Includes CAs, certificates, key management, validation protocols."
+        },
+        {
+          "term": "Certificate Authority (CA)",
+          "def": "Trusted entity issuing and managing digital certificates. Validates identities and binds public keys to entities."
+        }
+      ]
+    },
+    {
+      "title": "System Hardening",
+      "items": [
+        {
+          "term": "System Hardening",
+          "def": "Securing system by reducing attack surface, removing unnecessary services, and applying security configurations."
+        },
+        {
+          "term": "Patch Management",
+          "def": "Systematic process for identifying, testing, and deploying software updates and security patches to close vulnerabilities."
+        },
+        {
+          "term": "Baseline Configuration",
+          "def": "Standard secure configuration for systems serving as reference point. Ensures consistency and security across deployments."
+        },
+        {
+          "term": "Change Management",
+          "def": "Formal process controlling system modifications. Ensures changes are documented, approved, tested, and reversible."
+        },
+        {
+          "term": "Configuration Management",
+          "def": "Maintaining consistent system configurations and tracking changes over time. Prevents configuration drift."
+        },
+        {
+          "term": "Least Functionality",
+          "def": "Installing only necessary software and enabling only required services. Reduces attack surface and resource consumption."
+        },
+        {
+          "term": "Disable Unnecessary Services",
+          "def": "Turning off unused network services, protocols, and ports. Each running service is potential vulnerability."
+        },
+        {
+          "term": "Secure Default Settings",
+          "def": "Changing default passwords, disabling unnecessary features, removing default accounts. Default configurations often insecure."
+        }
+      ]
+    },
+    {
+      "title": "Vulnerability Management",
+      "items": [
+        {
+          "term": "Vulnerability",
+          "def": "Weakness in system, application, or process that can be exploited. Can be technical, procedural, or human."
+        },
+        {
+          "term": "Vulnerability Assessment",
+          "def": "Systematic process identifying, quantifying, and prioritizing vulnerabilities. Uses automated scanners and manual testing."
+        },
+        {
+          "term": "Vulnerability Scanning",
+          "def": "Automated tools identifying known vulnerabilities in systems and applications. Regular scanning detects new vulnerabilities."
+        },
+        {
+          "term": "Penetration Testing",
+          "def": "Simulated attack attempting to exploit vulnerabilities. Goes beyond scanning to validate exploitability. Ethical hacking."
+        },
+        {
+          "term": "Common Vulnerabilities and Exposures (CVE)",
+          "def": "Standardized identifier for known vulnerabilities. Public database maintaining vulnerability information."
+        },
+        {
+          "term": "Common Vulnerability Scoring System (CVSS)",
+          "def": "Standard framework rating vulnerability severity (0-10 scale). Helps prioritize remediation based on risk."
+        },
+        {
+          "term": "Remediation",
+          "def": "Fixing or mitigating vulnerabilities. Can involve patching, configuration changes, or implementing compensating controls."
+        },
+        {
+          "term": "False Positive",
+          "def": "Scanner incorrectly identifying non-existent vulnerability. Wastes resources investigating non-issues."
+        }
+      ]
+    },
+    {
+      "title": "Security Awareness and Training",
+      "items": [
+        {
+          "term": "Security Awareness",
+          "def": "High-level understanding of security concepts and organization's policies. Broad audience. Continuous program."
+        },
+        {
+          "term": "Security Training",
+          "def": "Detailed instruction on specific skills and procedures for particular roles. Targeted audience. Job-specific knowledge."
+        },
+        {
+          "term": "Phishing Simulation",
+          "def": "Controlled fake phishing campaigns testing user awareness and response. Identifies training needs, measures effectiveness."
+        },
+        {
+          "term": "Acceptable Use Policy (AUP)",
+          "def": "Document defining proper use of organization's IT resources. Users acknowledge understanding and agreement."
+        },
+        {
+          "term": "Social Engineering",
+          "def": "Manipulating people to divulge confidential information or perform actions. Exploits human psychology rather than technical vulnerabilities."
+        },
+        {
+          "term": "Clean Desk Policy",
+          "def": "Requirement to secure sensitive information when not in use. Prevents unauthorized access, shoulder surfing, data theft."
+        }
+      ]
+    },
+    {
+      "title": "Logging and Monitoring",
+      "items": [
+        {
+          "term": "Log Management",
+          "def": "Collecting, storing, analyzing, and retaining log data from systems and applications. Essential for security and compliance."
+        },
+        {
+          "term": "Security Information and Event Management (SIEM)",
+          "def": "Platform aggregating and analyzing security events from multiple sources. Real-time monitoring, correlation, alerting, reporting."
+        },
+        {
+          "term": "Log Aggregation",
+          "def": "Collecting logs from multiple sources into centralized system. Enables correlation and comprehensive analysis."
+        },
+        {
+          "term": "Event Correlation",
+          "def": "Analyzing multiple log events together to identify patterns indicating security incidents. Reduces false positives."
+        },
+        {
+          "term": "Alerting",
+          "def": "Automated notifications when specific events or conditions occur. Must be tuned to avoid alert fatigue."
+        },
+        {
+          "term": "Audit Trail",
+          "def": "Chronological record of system activities. Provides accountability, enables forensics, supports compliance."
+        },
+        {
+          "term": "Log Retention",
+          "def": "How long logs are stored. Based on regulatory requirements, investigation needs, and storage capacity."
+        },
+        {
+          "term": "Alert Fatigue",
+          "def": "Desensitization from too many alerts. Leads to ignoring warnings. Must tune alerting to reduce noise."
+        }
+      ]
+    },
+    {
+      "title": "Malware and Threats",
+      "items": [
+        {
+          "term": "Malware",
+          "def": "Malicious software designed to damage, disrupt, or gain unauthorized access. Umbrella term for various threat types."
+        },
+        {
+          "term": "Virus",
+          "def": "Malware attaching to legitimate programs, spreading when executed. Requires human action to propagate."
+        },
+        {
+          "term": "Worm",
+          "def": "Self-replicating malware spreading automatically across networks. No human interaction needed. Can consume bandwidth."
+        },
+        {
+          "term": "Trojan Horse",
+          "def": "Malware disguised as legitimate software. Users unknowingly install it. Provides backdoor access for attackers."
+        },
+        {
+          "term": "Ransomware",
+          "def": "Malware encrypting victim's data and demanding payment for decryption key. Major threat to organizations."
+        },
+        {
+          "term": "Spyware",
+          "def": "Software secretly monitoring and collecting information about users without consent. Tracks activities, steals credentials."
+        },
+        {
+          "term": "Rootkit",
+          "def": "Malware providing privileged access while hiding its presence. Very difficult to detect and remove. Modifies operating system."
+        },
+        {
+          "term": "Botnet",
+          "def": "Network of compromised computers (bots/zombies) controlled by attacker. Used for DDoS, spam, cryptocurrency mining."
+        },
+        {
+          "term": "Advanced Persistent Threat (APT)",
+          "def": "Sophisticated, prolonged targeted attack. Well-funded attackers using advanced techniques. Focus on espionage or data theft."
+        }
+      ]
+    },
+    {
+      "title": "Endpoint Security",
+      "items": [
+        {
+          "term": "Antivirus/Anti-Malware",
+          "def": "Software detecting and removing malicious software. Signature-based and heuristic detection. Requires regular updates."
+        },
+        {
+          "term": "Endpoint Detection and Response (EDR)",
+          "def": "Advanced endpoint security monitoring, detecting, and responding to threats. Behavioral analysis, threat hunting, forensics."
+        },
+        {
+          "term": "Host-Based Firewall",
+          "def": "Software firewall on individual systems controlling inbound and outbound traffic. Additional layer beyond network firewalls."
+        },
+        {
+          "term": "Host-Based Intrusion Prevention System (HIPS)",
+          "def": "Software monitoring system activities for malicious behavior. Can block suspicious actions in real-time."
+        },
+        {
+          "term": "Application Whitelisting",
+          "def": "Allowing only approved applications to execute. Blocks all others by default. Very effective but requires maintenance."
+        },
+        {
+          "term": "Mobile Device Management (MDM)",
+          "def": "Software managing and securing mobile devices. Enforces policies, deploys apps, enables remote wipe."
+        },
+        {
+          "term": "Data Execution Prevention (DEP)",
+          "def": "Security feature preventing code execution from data-only memory pages. Protects against buffer overflow attacks."
+        },
+        {
+          "term": "Address Space Layout Randomization (ASLR)",
+          "def": "Security technique randomizing memory locations of programs. Makes exploitation more difficult for attackers."
+        }
+      ]
+    },
+    {
+      "title": "Secure Software Development",
+      "items": [
+        {
+          "term": "Secure Development Lifecycle (SDL)",
+          "def": "Process integrating security throughout software development. Security requirements, design review, code review, testing."
+        },
+        {
+          "term": "Input Validation",
+          "def": "Checking user input for malicious content before processing. Prevents injection attacks, buffer overflows, XSS."
+        },
+        {
+          "term": "Code Review",
+          "def": "Systematic examination of source code for security vulnerabilities, bugs, and quality issues. Manual or automated."
+        },
+        {
+          "term": "Static Application Security Testing (SAST)",
+          "def": "Analyzing source code for vulnerabilities without executing program. White-box testing. Finds coding errors early."
+        },
+        {
+          "term": "Dynamic Application Security Testing (DAST)",
+          "def": "Testing running application for vulnerabilities. Black-box testing. Simulates real attacks on deployed application."
+        },
+        {
+          "term": "Version Control",
+          "def": "System tracking code changes over time. Enables rollback, collaboration, audit trail. Examples: Git, SVN."
+        },
+        {
+          "term": "Secure Coding Practices",
+          "def": "Guidelines for writing secure code. Input validation, proper error handling, avoiding hard-coded credentials, least privilege."
+        }
+      ]
+    },
+    {
+      "title": "Asset Management",
+      "items": [
+        {
+          "term": "Asset Inventory",
+          "def": "Comprehensive list of organization's assets (hardware, software, data). Foundation for security and risk management."
+        },
+        {
+          "term": "Asset Classification",
+          "def": "Categorizing assets based on value, criticality, and sensitivity. Determines protection levels and priorities."
+        },
+        {
+          "term": "Configuration Management Database (CMDB)",
+          "def": "Repository storing information about IT assets and relationships. Supports change management and incident response."
+        },
+        {
+          "term": "Software Inventory",
+          "def": "Catalog of installed software across organization. Identifies unauthorized software, aids in license management."
+        },
+        {
+          "term": "End of Life (EOL)",
+          "def": "When vendor stops supporting product. No more patches or updates. Security risk requiring replacement or mitigation."
+        },
+        {
+          "term": "End of Support (EOS)",
+          "def": "When vendor ends technical support but may provide critical patches. Precursor to End of Life."
+        },
+        {
+          "term": "Media Sanitization",
+          "def": "Securely removing data from storage media. Methods: overwriting, degaussing, physical destruction. Based on data sensitivity."
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "title": "Data at Rest vs Data in Transit vs Data in Use",
+      "items": [
+        {
+          "aspect": "Data at Rest",
+          "description": "Stored on physical media. Protected by encryption, access controls, physical security. Examples: databases, files, backups."
+        },
+        {
+          "aspect": "Data in Transit",
+          "description": "Moving across networks. Protected by TLS/SSL, VPNs, IPSec. Vulnerable to interception. Examples: email, web traffic, file transfers."
+        },
+        {
+          "aspect": "Data in Use",
+          "description": "Active in memory/CPU. Most vulnerable state. Protected by application security, memory encryption. Examples: data being processed, displayed."
+        }
+      ]
+    },
+    {
+      "title": "Symmetric vs Asymmetric Encryption",
+      "items": [
+        {
+          "aspect": "Symmetric Encryption",
+          "description": "Single shared key. Fast. Key distribution problem. Good for bulk data. Examples: AES, DES, 3DES. Used for data encryption."
+        },
+        {
+          "aspect": "Asymmetric Encryption",
+          "description": "Public-private key pair. Slow. Solves key distribution. Good for key exchange and signatures. Examples: RSA, ECC. Used for authentication."
+        },
+        {
+          "aspect": "Hybrid Approach",
+          "description": "Use asymmetric to exchange symmetric key, then use symmetric for data. Combines benefits of both. Common in TLS/SSL."
+        }
+      ]
+    },
+    {
+      "title": "Encryption vs Hashing",
+      "items": [
+        {
+          "aspect": "Encryption",
+          "description": "Two-way transformation. Reversible with key. Protects confidentiality. Variable output length. Examples: AES, RSA."
+        },
+        {
+          "aspect": "Hashing",
+          "description": "One-way transformation. Cannot be reversed. Ensures integrity. Fixed output length. Examples: SHA-256, MD5. Used for passwords."
+        }
+      ]
+    },
+    {
+      "title": "Vulnerability Assessment vs Penetration Testing",
+      "items": [
+        {
+          "aspect": "Vulnerability Assessment",
+          "description": "Identifies and reports vulnerabilities. Automated scanning. Broad coverage. Doesn't attempt exploitation. Less intrusive."
+        },
+        {
+          "aspect": "Penetration Testing",
+          "description": "Attempts to exploit vulnerabilities. Manual testing with tools. Deep analysis. Validates exploitability. More intrusive. Ethical hacking."
+        }
+      ]
+    },
+    {
+      "title": "False Positive vs False Negative",
+      "items": [
+        {
+          "aspect": "False Positive",
+          "description": "Alert when no actual threat exists. Benign activity flagged as malicious. Wastes resources investigating. Causes alert fatigue."
+        },
+        {
+          "aspect": "False Negative",
+          "description": "No alert when actual threat exists. Malicious activity not detected. More dangerous than false positive. Leaves organization vulnerable."
+        }
+      ]
+    },
+    {
+      "title": "Virus vs Worm vs Trojan",
+      "items": [
+        {
+          "aspect": "Virus",
+          "description": "Attaches to legitimate files. Requires host program. Needs user action to spread. Infects via file sharing, email attachments."
+        },
+        {
+          "aspect": "Worm",
+          "description": "Self-contained program. Self-replicating. Spreads automatically without user action. Exploits network vulnerabilities."
+        },
+        {
+          "aspect": "Trojan",
+          "description": "Disguised as legitimate software. Does not self-replicate. User installs unknowingly. Provides backdoor access."
+        }
+      ]
+    },
+    {
+      "title": "Antivirus vs EDR",
+      "items": [
+        {
+          "aspect": "Antivirus/Anti-Malware",
+          "description": "Signature-based detection. Blocks known malware. Reactive. Basic protection. Requires frequent updates. Good for known threats."
+        },
+        {
+          "aspect": "Endpoint Detection and Response (EDR)",
+          "description": "Behavioral analysis. Detects unknown threats. Proactive. Advanced features (forensics, threat hunting, response). Better for APTs."
+        }
+      ]
+    },
+    {
+      "title": "SAST vs DAST",
+      "items": [
+        {
+          "aspect": "Static Application Security Testing (SAST)",
+          "description": "Analyzes source code. White-box testing. Early in development. Finds coding errors. No running application needed."
+        },
+        {
+          "aspect": "Dynamic Application Security Testing (DAST)",
+          "description": "Tests running application. Black-box testing. Later in development. Finds runtime vulnerabilities. Requires deployed application."
+        }
+      ]
+    },
+    {
+      "title": "Security Awareness vs Security Training",
+      "items": [
+        {
+          "aspect": "Security Awareness",
+          "description": "General understanding. Broad audience. What and why. Ongoing program. Examples: posters, newsletters, reminders."
+        },
+        {
+          "aspect": "Security Training",
+          "description": "Specific skills. Targeted audience. How to do tasks. Role-specific. Examples: hands-on exercises, certifications, workshops."
+        }
+      ]
+    },
+    {
+      "title": "Whitelisting vs Blacklisting",
+      "items": [
+        {
+          "aspect": "Whitelisting",
+          "description": "Allow only approved items. Deny everything else by default. More secure but higher maintenance. Better for controlled environments."
+        },
+        {
+          "aspect": "Blacklisting",
+          "description": "Block known bad items. Allow everything else by default. Less secure but easier to maintain. Cannot block unknown threats."
+        }
+      ]
+    },
+    {
+      "title": "Patch vs Hotfix vs Update",
+      "items": [
+        {
+          "aspect": "Patch",
+          "description": "Fix for specific vulnerability or bug. Security-focused. Typically tested and scheduled. May require restart."
+        },
+        {
+          "aspect": "Hotfix",
+          "description": "Urgent patch for critical issue. Immediate deployment. Less testing due to urgency. Addresses active exploitation."
+        },
+        {
+          "aspect": "Update",
+          "description": "General improvements, features, or multiple fixes. May include security patches. More comprehensive. Scheduled releases."
+        }
+      ]
+    },
+    {
+      "title": "Change Management vs Configuration Management",
+      "items": [
+        {
+          "aspect": "Change Management",
+          "description": "Process controlling modifications. Focus on approval, testing, implementation, rollback. Ensures changes are safe and documented."
+        },
+        {
+          "aspect": "Configuration Management",
+          "description": "Process maintaining system states. Focus on consistency, tracking configurations. Prevents drift, enables restoration."
+        }
+      ]
+    }
+  ]
+}
